@@ -1,0 +1,137 @@
+version: "2.0"
+
+nlu:
+
+- synonym: manipal 
+  examples: |
+    - Manipal
+    - manipala
+    - manipal udupi
+    - Manipal Udupi
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: weather
+  examples: |
+    - what's the weather
+    - i want to know the weather of today
+    - tell me the weather forcast
+    - what is the temperature
+    - i want to know the temperature
+    - What is the weather in 
+    - how is the weather today
+
+- intent: city
+  examples: |
+    - [kasaragood](location) 
+    - [delhi](location)
+    - [chandigarh](location)
+    - [london](location)
+    - [manipal](location)
+    - [berlin](location)
+    - [ohio](location)
+    - [france](location)
+    - [bangalore](location)
+    - [dharwad](location)
+    - [mumbai](location)
+    - [jaipur](location)
+
+- intent: inform
+  examples: |
+    - What's the weather in [Berlin](location) at the moment?
+    - What's the weather today?
+    - What's the weather in [London](location) today?
+    - Show me what's the weather in [Paris](location)
+    - I wonder what is the weather in [Vilnius](location) right now?
+    - what is the weather?
+    - Tell me the weather
+    - Is the weather nice in [Barcelona](location) today?
+    - I am going to [London](location) today and I wonder what is the weather out there?
+    - I am planning my trip to [Amsterdam](location). What is the weather out there?
+    - Show me the weather in [Dublin](location), please
+    - in [London](location)
+    - [Lithuania](location)
+    - Oh, sorry, in [Italy](location)
+    - Tell me the weather in [Vilnius](location)
+    - The weather condition in [Italy](location)
+    - hows weather in [Chennai](location)
+    - weather in [Hungary](location)
+    - [mumbai](location)
+    - Temperature at [Paris](location)
+    - [Chennai](location)
+    - [Paris](location)
+    - [Paris](location) Temerature
+    - [paris](location)
+    - whats weather in [Chennai](location)
+    - hows [Paris](location)
+    - hows [Berlin](location) today
+    - weather in [Chennai](location:chennai)
+    - in [Mumbai](location:mumbai)
+    - hows weather in [Berlin](location)
+    - hows weather in [Dublin](location)
+    - hows weather in [Mumbai](location)
+    - hows weather in [mumbai](location)
+    - Hows [Chennai](location) doing today
+    - in [Chennai](location:chennai)
+    - Hows [Chennai](location) doing today?
+    - [Chennai](location)?
+    - Hows [Paris](location) today?
+    - May I know weather today
+    - Temperature in [Goa](location)
+    - Hows weather in [Goa](location)
+    - temperature in [Cheeenai](location)
+    - Hows weather in [Chennai](location)
+    - Whats the weather in [Chennai](location)
+    - whats the weather in [Chennai](location)
+    - in [Paris](location:paris)
+    - In [Chennai](location)
+    - hows [Mumbai](location)
+    - Weather in [London](location)
+
+- intent: inquire
+  examples: |
+    - want to know weather
+    - weather
+    - Hows the weather
+    - whats the weather
+    - how is weather outside
+    - hows weather
+    - want to know the weather
+    - how is the weather
+    - Hows [Chennai](location) today?
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
