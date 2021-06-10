@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+    web:
+        image: flaskapp
+        ports: 
+            - 5000:5000
+        depends_on:
+            - rasa
+    rasa:
+        image: rasa/rasa:2.6.1-full
+        ports:
+            - 5005:5005
+        volumes:
+            - ./:/app
+        command:
+            - run -m models --enable-api --cors “*” --endpoints endpoints.yml --credentials c   redentials.yml
+        depends_on:
+            - action-server
+
+    action-server:
+        image: rasa/rasa-sdk:2.6.0
+        volumes:
+            - ./actions:/app/actions
+        ports:
+            - 5055:5055
