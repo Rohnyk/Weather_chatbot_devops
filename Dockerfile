@@ -20,7 +20,7 @@
 
  EXPOSE 5000 5005
  ENTRYPOINT ["./execute_webapp.sh"]
- 
+    
 
  
 

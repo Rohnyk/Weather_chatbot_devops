@@ -3,7 +3,7 @@ import requests
 import json
 
 app = Flask(__name__, template_folder= 'Templates')
-context_set = ""
+
 
 @app.route('/')
 def index():

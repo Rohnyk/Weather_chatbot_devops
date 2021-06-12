@@ -24,8 +24,9 @@ class ActionWeatherCity(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         city= tracker.get_slot('location')
-        temperature= Weather(city)['temp']
-        response = "The current temperature at {} is {} degree Celsius.".format(city,temperature)
+        pressure=Weather(city)['pressure']
+        humidity=Weather(city)['humidity']
+        response = "The current temperature at {} is {} degree Celsius and pressure is {} ,humidity {}.".format(city,temperature,pressure,humidity)
         dispatcher.utter_message(response)
 
         return []
